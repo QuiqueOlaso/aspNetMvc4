@@ -2,8 +2,9 @@
     Inherits System.Web.Mvc.Controller
 
     Function Index() As ActionResult
+        ViewData("Title") = My.Application.Info.Title.ToString + " : Página principal"
         ViewData("Message") = "Modifique esta plantilla para poner en marcha su aplicación ASP.NET MVC."
-
+        ViewData("MessageExplanation") = "Explicacion del mensaje"
         Return View()
     End Function
 

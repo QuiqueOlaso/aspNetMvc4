@@ -1,15 +1,17 @@
 ﻿@Code
-    ViewData("Title") = "Página principal"
+    'lo comentamos porque lo pasamos al HomeController
+    'ViewData("Title") = "Página principal"
 End Code
 
 @section featured
     <section class="featured">
         <div class="content-wrapper">
             <hgroup class="title">
-                <h1>@ViewData("Title").</h1>
+                <h1>@ViewData("Title")</h1>
                 <h2>@ViewData("Message")</h2>
             </hgroup>
             <p>
+                <h2>@ViewData("MessageExplanation")</h2>
                 Para obtener más información sobre ASP.NET MVC, visite
                 <a href="http://asp.net/mvc" title="Sitio web de ASP.NET MVC">http://asp.net/mvc</a>.
                 La página incluye <mark>vídeos, cursos y ejemplos</mark> para ayudarle a sacar el máximo partido a ASP.NET MVC.

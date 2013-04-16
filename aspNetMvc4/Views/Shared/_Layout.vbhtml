@@ -10,6 +10,9 @@
         @Scripts.Render("~/bundles/modernizr")
     </head>
     <body>
+
+<!-- HEADER section //-->
+
         <header>
             <div class="content-wrapper">
                 <div class="float-left">
@@ -29,12 +32,18 @@
                 </div>
             </div>
         </header>
+
+<!-- BODY section //-->
+
         <div id="body">
             @RenderSection("featured", required:=false)
             <section class="content-wrapper main-content clear-fix">
                 @RenderBody()
             </section>
         </div>
+
+<!-- FOOTER section //-->
+
         <footer>
             <div class="content-wrapper">
                 <div class="float-left">
@@ -46,4 +55,7 @@
         @Scripts.Render("~/bundles/jquery")
         @RenderSection("scripts", required:=False)
     </body>
+
+
+
 </html>
